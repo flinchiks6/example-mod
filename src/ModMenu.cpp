@@ -3,7 +3,7 @@
 
 ModMenu* ModMenu::create() {
     auto ret = new ModMenu();
-    if (ret->initAnchored(380.f, 250.f, "square02b_001.png")) {
+    if (ret->init()) {
         ret->autorelease();
         return ret;
     }
@@ -11,7 +11,9 @@ ModMenu* ModMenu::create() {
     return nullptr;
 }
 
-bool ModMenu::setup() {
+bool ModMenu::init() {
+    if (!Popup::init(380.f, 250.f)) return false;
+
     this->setTitle("Modern Mod Menu");
 
     // тёмная "стеклянная" панель
@@ -29,7 +31,7 @@ bool ModMenu::setup() {
     m_content = CCNode::create();
     m_content->setContentSize(m_size);
     m_content->setAnchorPoint({0.5f, 0.5f});
-    m_content->setPosition(m_size / 2);
+    m_content->setPosition({m_size.width / 2, m_size.height / 2});
     m_mainLayer->addChild(m_content);
 
     showTab(0);
