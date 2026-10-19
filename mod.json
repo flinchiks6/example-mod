@@ -1,15 +1,15 @@
 {
 	"geode": "5.11.2",
 	"gd": {
-		"win": "2.2074",
-		"android": "2.2074",
-		"mac": "2.2074",
-		"ios": "2.2074"
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
 	},
-	"id": "yourname.modern-mod-menu",
+	"id": "flinchik.modern-mod-menu",
 	"name": "Modern Mod Menu",
 	"version": "v1.0.0",
-	"developer": "YourName",
-	"description": "Стильное мод-меню с вкладками: Noclip, Speedhack и Safe Mode.",
+	"developer": "Flinchik",
+	"description": "Mod menu with Noclip, Speedhack and Safe Mode.",
 	"dependencies": []
 }
